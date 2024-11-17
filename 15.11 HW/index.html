@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correctPassword = "amjilt_the_best";
+
+for (let attempts = 1; attempts <= 5; attempts++) {
+    let inputPassword = prompt("Парольді енгізіңіз:");
+
+    if (inputPassword === correctPassword) {
+        console.log("Құпия сөз дұрыс! Қол жеткізілді.");
+        break; 
+    } else {
+        console.log("Қате пароль! Бұл " + attempts + "-әрекет (барлығы 5).");
+    }
+
+    if (attempts === 5) {
+        console.log("Too many attempts. Цикл аяқталды.");
+    }
+}
+
+    </script>
+</body>
+</html>
