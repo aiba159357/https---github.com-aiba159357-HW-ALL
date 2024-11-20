@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = +prompt("enter num 1-100")
+        if (num > 100 || num<1) {
+            
+            console.log("only 1- 100");
+            
+        }
+        
+        function findnum(a) {
+            let result =0;
+            if (a === 15    ) {
+                return "durys"; 
+            } else if (a > 78) {
+                return "ulken"
+            } else if (a < 78) {
+                return "kishi"
+            }
+            return result;
+        }
+        console.log(findnum(num));
+    </script>
+</body>
+</html>
