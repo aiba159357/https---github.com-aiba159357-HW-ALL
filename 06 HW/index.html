@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let books = [
+  { title: "Кітап 1", author: "Автор 1", year: 2001 },
+  { title: "Кітап 2", author: "Автор 2", year: 2005 },
+  { title: "Кітап 3", author: "Автор 3", year: 2010 }
+];
+
+let bookTitle = prompt("Кітаптың атын енгізіңіз (атауын жаңарту үшін):");
+
+let bookFound = false;
+
+books.forEach(book => {
+  if (book.title === bookTitle) {
+    let newYear = prompt("Кітаптың жаңа жылын енгізіңіз:");
+    book.year = Number(newYear);
+    bookFound = true;
+  }
+});
+
+if (!bookFound) {
+  alert("Мұндай кітап табылмады.");
+}
+
+books.forEach(book => {
+  alert(`Атауы: ${book.title}, Автор: ${book.author}, Жылы: ${book.year}`);
+});
+    </script>
+</body>
+</html>
