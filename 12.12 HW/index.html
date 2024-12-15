@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1 {
+            color: #333;
+        }
+        label {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        input {
+            font-size: 1.1em;
+            padding: 5px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+         
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TEXT ZHAZ ASTYGA</h1>
+    <label for="name">ATY - ZHONIN:</label>
+    <input type="text" id="name" oninput="textzhazy()"  placeholder="OCY ZHERGE ATYNDY ZHAZ">
+    <p>Siz zhazyp zhatyrs: <span id="output"></span></p>
+    <button type="button" onclick="senengiz()">ZHBERY</button>
+    <p>Siz zhbergensiz: <span id="submitted"></span></p>
+
+    <script>
+        function textzhazy() {
+            const input = document.getElementById("name").value;
+            document.getElementById("output").innerText = input;
+        }
+
+        function senengiz() {
+            const input = document.getElementById("name").value;
+            document.getElementById("submitted").innerText = input;
+        }
+    </script>
+</body>
+</html>
